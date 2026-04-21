@@ -11,13 +11,13 @@ public class BussinessCoach {
         boolean inBlackList = false;
                 
         boolean already18Years = ageVisitor >= 18;
-        boolean canPresent = (already18Years && (hasInvite || amountInTheAccount > 50_000) && !inBlackList);
+        boolean canPresent = already18Years && (hasInvite || amountInTheAccount > 50_000) && !inBlackList;
         double voluntaryContribution = amountInTheAccount * 7.5 / 100;
 		
 		    System.out.println("Возраст посетителя: " + ageVisitor);
 		    System.out.println("Сумма на счете (руб): " + amountInTheAccount);
 		    System.out.println("Допуск на мероприятие: " + canPresent);	
-        System.out.println("Добровольно-принудительный взнос (руб): " + voluntaryContribution);
+        	System.out.println("Добровольно-принудительный взнос (руб): " + voluntaryContribution);
 		
 		
 		
