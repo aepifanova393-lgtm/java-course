@@ -37,15 +37,16 @@ public class Baskets {
             for (String products : arrayOfProducts) {                      // для каждой строки внутри массива arrayOfProducts
                 if (products.length() > maxSimbols.length()) {
                     maxSimbols = products;
-                    totalLenght += products.length();
-                    numberOfElements++;
                 }
                 if (products.length() < minSimbols.length()) {
                     minSimbols = products;
                 }
+                totalLenght += products.length();
+                numberOfElements++;
             }
                     }
         double averageValue = (double) (totalLenght / numberOfElements);
+
         System.out.println("Самое длинное название товара: " + maxSimbols);
         System.out.println("Самое короткое название товара: " + minSimbols);
         System.out.println("Среднее значение длины названия товаров: " + averageValue);
